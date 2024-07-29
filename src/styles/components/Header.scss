@@ -1,0 +1,27 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 5% 3% 5%;
+
+    .header-logo {
+        width: 12%;
+    }
+
+    .header-nav{
+        display: flex;
+        justify-content:space-between;
+
+       .header-link {
+        margin-left: 40px;
+        text-decoration: none; 
+        color: inherit; 
+
+        &.active-link {
+            text-decoration: underline; 
+            text-underline-offset: 2px;
+        }
+       }
+      
+    }
+}
