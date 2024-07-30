@@ -1,13 +1,20 @@
-import Banner_Home from '../assets/Image Home.png'
-import '../styles/components/Banner.scss'
+import React from 'react';
+import PropTypes from 'prop-types';
+import '../styles/components/Banner.scss';
 
-function Banner() {
+function Banner({ imageSrc, altText, text }) {
     return (
         <div className="banner-container">
-            <img src={Banner_Home} alt='Paysage de falaise se jetant dans la mer' className="banner-image"/>
-            <div className="banner-text">Chez vous, partout et ailleurs</div>
+            <img src={imageSrc} alt={altText} className="banner-image" />
+            {text && <div className="banner-text">{text}</div>}
         </div>
-    )
+    );
 }
 
-export default Banner
+Banner.propTypes = {
+    imageSrc: PropTypes.string.isRequired,
+    altText: PropTypes.string.isRequired,
+    text: PropTypes.string,
+};
+
+export default Banner;

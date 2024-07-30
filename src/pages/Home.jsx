@@ -2,11 +2,16 @@ import Banner from "../components/Banner"
 import annonces from "../data/annonces.json"
 import Card from "../components/Card"
 import "../styles/Pages/Home.scss"
+import Banner_Home from "../assets/Image Home.png"
 
 function Home() {
     return (
         <div>
-         <Banner />
+         <Banner 
+                imageSrc={Banner_Home} 
+                altText="Paysage de falaise se jetant dans la mer" 
+                text="Chez vous, partout et ailleurs" 
+            />
          <div className="cards-container">
                 {annonces.map(annonces => (
                     <Card 
