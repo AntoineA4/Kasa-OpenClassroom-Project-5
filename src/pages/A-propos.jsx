@@ -7,7 +7,7 @@ function Apropos() {
         <div>
             <Banner 
                 imageSrc={BannerAboutImage} 
-                altText="Autre description de l'image" 
+                altText="Image de riviere au milieu des montagnes" 
                 text="" 
             />
             <Collapse />
