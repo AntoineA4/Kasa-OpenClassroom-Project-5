@@ -5,7 +5,7 @@ function Error() {
     return (
         <div className="errorContainer">
             <p className="errorNumber">404</p>
-            <p className="errorMessage">Oups! La page que vous demandez n'existe pas.</p>
+            <p className="errorMessage">Oups! La page que <span className='breakError'>vous demandez n'existe pas.</span></p>
             <Link to="/" className="homeLink">Retourner sur la page d'acceuil</Link>
         </div>
     )

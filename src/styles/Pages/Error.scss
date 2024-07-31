@@ -10,6 +10,10 @@ $kasa-color:#FF6060;
         font-weight: 700;
         font-size: 200px;
         margin:1% 0% 3% 0%;
+        @media (max-width:499px) {
+            font-size: 99px;
+            margin-top: 24%;
+        }
 
     }  
     .errorMessage {
@@ -17,9 +21,24 @@ $kasa-color:#FF6060;
         font-weight: 500;
         font-size: 36px;
         margin:2% 0% 3% 0%;
+        .breakError {
+            display: inline;
+        }
+        @media (max-width:499px) {
+            font-size: 20px;
+            margin-top: 20%;
+            text-align: center;
+            .breakError {
+                display: block;
+            }
+        }
     } 
     .homeLink {
         margin:2% 0% 8% 0%;
         color: black;
+        @media (max-width:499px) {
+            font-size: 14px;
+            margin: 20% 0% 24% 0%;
+        }
     }  
 }
