@@ -7,11 +7,10 @@ import Banner_Home from "../assets/Image Home.png"
 function Home() {
     return (
         <div>
-         <Banner 
-                imageSrc={Banner_Home} 
-                altText="Paysage de falaise se jetant dans la mer" 
-                text="Chez vous, partout et ailleurs" 
-            />
+         <Banner imageSrc={Banner_Home} altText="Paysage de falaise se jetant dans la mer">
+                <span>Chez vous,</span>
+                <span>partout et ailleurs</span>
+            </Banner>
          <div className="cards-container">
                 {annonces.map(annonces => (
                     <Card 

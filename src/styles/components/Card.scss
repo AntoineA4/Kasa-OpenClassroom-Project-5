@@ -8,6 +8,11 @@
     overflow: hidden;
     position: relative; /* Permet de positionner le texte sur l'image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    @media (max-width: 499px) {
+        margin:20px 10px 0px 10px;
+        width: 90%;
+
+    }
 
     .card-cover {
         width: 100%;
@@ -24,5 +29,8 @@
         font-size: 15px;
         font-weight: bold;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        @media (max-width: 499px) {
+            font-size: 24px;
+        }
     }
 }

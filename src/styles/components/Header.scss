@@ -6,6 +6,9 @@
 
     .header-logo {
         width: 12%;
+        @media (max-width: 499px) {
+            width: 40%
+        }
     }
 
     .header-nav{
