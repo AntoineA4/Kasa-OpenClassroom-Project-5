@@ -1,6 +1,7 @@
 import Banner from '../components/Banner';
 import BannerAboutImage from '../assets/Image Apropos.png';
 import Collapse from '../components/Collapse';
+import '../styles/Pages/A-propos.scss';
 
 function Apropos() {
     return (
