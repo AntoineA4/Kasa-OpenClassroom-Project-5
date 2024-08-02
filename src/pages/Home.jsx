@@ -15,6 +15,7 @@ function Home() {
                 {annonces.map(annonces => (
                     <Card 
                         key={annonces.id}
+                        id={annonces.id}
                         title={annonces.title}
                         cover={annonces.cover}
                     />
