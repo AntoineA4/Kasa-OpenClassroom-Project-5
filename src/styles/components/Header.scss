@@ -14,11 +14,15 @@
     .header-nav{
         display: flex;
         justify-content:space-between;
+        align-items: center;
 
        .header-link {
         margin-left: 40px;
         text-decoration: none; 
         color: inherit; 
+        @media (max-width:390px) {
+            margin-left: 30px;
+        }
 
         &.active-link {
             text-decoration: underline; 
