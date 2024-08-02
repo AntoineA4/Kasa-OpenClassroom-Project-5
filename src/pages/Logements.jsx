@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import annonces from '../data/annonces.json';
+import Slideshow from '../components/Slideshow';
 import '../styles/Pages/Logements.scss';
 
 function Logements() {
@@ -12,7 +13,7 @@ function Logements() {
 
     return (
         <div className="logement-detail">
-            <img src={logement.cover} alt={logement.title} className="logement-cover" />
+            <Slideshow images={logement.pictures} />
             <h1>{logement.title}</h1>
             <p>{logement.description}</p>
             {/* Ajouter d'autres détails du logement ici */}
