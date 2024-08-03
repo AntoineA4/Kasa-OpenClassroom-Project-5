@@ -12,11 +12,23 @@ function Logements() {
     }
 
     return (
-        <div className="logement-detail">
+        <div className="logement-container">
             <Slideshow images={logement.pictures} />
-            <h1>{logement.title}</h1>
+            <div className='logement-detail'>
+                <div className='titlePart'>
+                    <h1>{logement.title}</h1>
+                    <p>{logement.location}</p>
+                    <span>{logement.tags}</span>
+                </div>
+                <div className='hostAndStars'>
+                    <div className='host'>
+                        <p>{logement.host.name}</p>
+                        <img src={logement.host.picture} alt="" className='hostPicture'/>
+                    </div>
+                </div>
+            </div>
             <p>{logement.description}</p>
-            {/* Ajouter d'autres détails du logement ici */}
+            <p>{logement.equipments}</p>
         </div>
     );
 }

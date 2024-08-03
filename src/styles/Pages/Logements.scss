@@ -1,0 +1,31 @@
+$kasa-color:#FF6060;
+
+.logement-detail {
+    margin: 2% 5% 3% 5%;
+    display: flex;
+    justify-content: space-between;
+    .titlePart {
+        h1 {
+            color:$kasa-color;
+            font-weight: 500;
+            font-size: 36px;
+            margin: 0;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    .hostAndStars {
+        .host {
+            display: flex;
+            color: $kasa-color;
+            img {
+                height: 70px;
+                border-radius: 70px;
+                object-fit: cover;
+            }
+        }
+
+    }
+    
+}
