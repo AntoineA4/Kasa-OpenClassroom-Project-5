@@ -41,4 +41,16 @@ $slide-btn-padding: 10px;
         @include slide-btn-style;
         right: 10px;
     }
+
+    .imgCounter {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: $slide-btn-color;
+
+    }
 }

@@ -1,0 +1,21 @@
+$kasa-color:#FF6060;
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 7%;
+
+    .tag {
+        border-radius: 15px;
+        background-color: $kasa-color;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 30px;
+    }
+}

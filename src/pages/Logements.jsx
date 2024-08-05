@@ -3,6 +3,8 @@ import annonces from '../data/annonces.json';
 import Slideshow from '../components/Slideshow';
 import Collapse from '../components/Collapse';
 import '../styles/Pages/Logements.scss';
+import StarsRate from '../components/StarsRate';
+import Tags from '../components/Tags';
 
 function Logements() {
     const { id } = useParams();
@@ -22,13 +24,14 @@ function Logements() {
                 <div className='titlePart'>
                     <h1>{logement.title}</h1>
                     <p>{logement.location}</p>
-                    <span>{logement.tags.join(' ')}</span>
+                    <Tags tags={logement.tags} />
                 </div>
                 <div className='hostAndStars'>
                     <div className='host'>
                         <p>{logement.host.name}</p>
                         <img src={logement.host.picture} alt="" className='hostPicture'/>
                     </div>
+                <StarsRate rating = {logement.rating}/>
                 </div>
             </div>
             <Collapse items={items} />
