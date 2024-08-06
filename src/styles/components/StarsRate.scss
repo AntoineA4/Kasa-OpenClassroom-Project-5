@@ -1,5 +1,13 @@
 .starsRate {
     display: flex;
+    justify-content: flex-end;
     gap: 0.8rem;
-    margin-top: 5%;
+    margin: 13% 5% 7% 0%;
+    .stars {
+        height: 28px;
+        @media (max-width: 499px) {
+            height: 18px;
+        
+        }
+    }
 }

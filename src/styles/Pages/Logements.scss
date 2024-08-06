@@ -4,29 +4,66 @@ $kasa-color:#FF6060;
     margin: 2% 5% 3% 5%;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 499px) {
+     flex-direction: column;   
+    }
     .titlePart {
         h1 {
             color:$kasa-color;
             font-weight: 500;
             font-size: 36px;
             margin: 0;
+            @media (max-width: 499px) {
+                font-size: 28px;
+        
+            }
         }
         p {
             font-size: 18px;
             margin: 1% 0% 4% 0%;
+            @media (max-width: 499px) {
+                font-size: 16px;
+            }
         }
     }
     .hostAndStars {
+        @media (max-width: 499px) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
         .host {
             display: flex;
+            align-items: center;
             color: $kasa-color;
+            margin-bottom: 5% ;
+            margin-top: -3%;
+            @media (max-width: 499px) {
+                margin-top: 6%;
+        
+            }
             img {
-                height: 70px;
+                height: 90px;
                 border-radius: 70px;
                 object-fit: cover;
+                margin-right: 5%;
+                margin-left: 0;
+                padding-left: 0;
+                @media (max-width: 499px) {
+                    height: 60px;
+                }
+            }
+            p {
+                font-size: 18px;
+                margin-left: 7%;
+                margin-right: 0;
+                padding-right: 0;
+                @media (max-width: 499px) {
+                    font-size: 16px;
+                }
             }
         }
 
     }
+    
     
 }
