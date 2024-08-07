@@ -14,10 +14,10 @@ $kasa-color:#FF6060;
         align-items: center;
         height: 2.5em;
         background: $kasa-color;
-        padding-left: 10px;
+        padding: 5px 15px;
         border-radius: 5px;
         margin-top: 1em;
-        cursor: pointer;
+        
 
         .collapse-title {
             color: white;
@@ -28,8 +28,8 @@ $kasa-color:#FF6060;
         .icon {
             color: white;
             font-size: 24px;
-            padding-right: 15px;
             transition: transform 0.3s;
+            cursor: pointer;
 
             &.rotate {
                 transform: rotate(180deg);
@@ -38,7 +38,27 @@ $kasa-color:#FF6060;
     }
 
     .collapse-content {
-        padding: 15px;
         background: #F6F6F6;
+        height: 0;
+        padding: 0;
+        opacity: 0;
+
+        transition:0.3s;
+        overflow: hidden;
+        p {
+            height: 0;
+        }
+        &.show {
+            height: auto;
+            padding: 15px;
+            opacity: 1;
+            p {
+                height: auto;
+            }
+        }
     }
+}
+.collapse-logements {
+    display: flex;
+    background-color: red;
 }

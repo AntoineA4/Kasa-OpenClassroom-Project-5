@@ -34,7 +34,9 @@ function Logements() {
                 <StarsRate rating = {logement.rating}/>
                 </div>
             </div>
-            <Collapse items={items} />
+            <div className='collapse-logements'>
+                <Collapse items={items} />
+            </div>
         </div>
     );
 }

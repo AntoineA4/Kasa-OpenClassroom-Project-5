@@ -26,11 +26,9 @@ function Collapse({ items }) {
                             onClick={() => toggleSection(index)}
                         />
                     </div>
-                    {openDescriptions.includes(index) && (
-                        <div className="collapse-content">
-                            <p>{item.description}</p>
-                        </div>
-                    )}
+                    <div className={`collapse-content ${openDescriptions.includes(index) ? 'show' : ''}`}>
+                        <p>{item.description}</p>
+                    </div>
                 </div>
             ))}
         </div>
