@@ -17,6 +17,7 @@ $kasa-color:#FF6060;
         padding: 5px 15px;
         border-radius: 5px;
         margin-top: 1em;
+       
         
 
         .collapse-title {
@@ -60,5 +61,18 @@ $kasa-color:#FF6060;
 }
 .collapse-logements {
     display: flex;
-    background-color: red;
+    justify-content: center;
+    margin-top: 0%;
+    
+    
+    .collapse-list {
+        width: 90%;
+        flex-direction: row;
+        gap: 7%;
+        align-items: flex-start;
+        @media (max-width:499px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
