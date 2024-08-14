@@ -30,6 +30,7 @@ $kasa-color:#FF6060;
         @media (max-width: 499px) {
             display: flex;
             flex-direction: row-reverse;
+            justify-content: space-between;
         }
         .host {
             display: flex;

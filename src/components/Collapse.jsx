@@ -27,7 +27,11 @@ function Collapse({ items }) {
                         />
                     </div>
                     <div className={`collapse-content ${openDescriptions.includes(index) ? 'show' : ''}`}>
-                        <p>{item.description}</p>
+                        {(Array.isArray (item.description)) ? item.description.map((equipement, index) => (
+                            <p key={index} >{equipement}</p>
+                        )) : (
+                            <p>{item.description}</p>
+                        )}
                     </div>
                 </div>
             ))}

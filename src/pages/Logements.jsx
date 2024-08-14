@@ -26,7 +26,7 @@ function Logements() {
    
     const items = [
         { title: 'Description', description: logement.description },
-        { title: 'Équipements', description: logement.equipments.join(', ') }
+        { title: 'Équipements', description: logement.equipments }
     ];
     return (
         <div className="logement-container">
